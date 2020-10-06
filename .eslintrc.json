@@ -20,6 +20,7 @@
     "comma-spacing": [2, { "before": false, "after": true }],
     "line-comment-position": [2, "above"],
     "no-lonely-if": [2],
-    "no-unused-vars": ["off"]
+    "no-unused-vars": ["off"],
+    "react/prop-types": "off"
   }
 }
