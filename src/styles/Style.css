@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+.opening-to-main-button {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 86px;
+  width: 200px;
+  background-color: #000;
+  color: #fff;
+  font-size: 28px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.opening-to-main-button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+}
+/*# sourceMappingURL=Style.css.map */

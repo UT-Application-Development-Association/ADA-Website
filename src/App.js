@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./styles/App.css";
+import "./styles/Style.css";
 
 import Opening from "./pages/Opening";
 import Main from "./pages/Main";

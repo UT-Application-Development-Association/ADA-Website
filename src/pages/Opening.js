@@ -4,7 +4,7 @@ export default function Opening(props) {
   return (
     <div>
       Page Opening
-      <button onClick={() => props.setCurrPage("Main")}>To main</button>
+      <button className="opening-to-main-button" onClick={() => props.setCurrPage("Main")}>To main</button>
     </div>
   );
 }

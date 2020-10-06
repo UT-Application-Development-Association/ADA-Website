@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "ACEA,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,MAAM;EAClB,WAAW,ECIN,SAAS,EAAE,UAAU;EDH1B,QAAQ,EAAE,QAAQ;CACnB;;AEJD,AAAA,uBAAuB,CAAC;EACpB,QAAQ,EAAE,KAAK;EACf,GAAG,EAAE,GAAG;EACR,IAAI,EAAE,GAAG;EACT,SAAS,EAAE,qBAAqB;EAChC,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,KAAK;EAEZ,gBAAgB,EDVJ,IAAI;ECWhB,KAAK,EDVQ,IAAI;ECWjB,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,IAAI;CAMnB;;AAjBD,AAYI,uBAZmB,AAYlB,MAAM,CAAE;EACL,MAAM,EAAE,OAAO;EACf,gBAAgB,EDfP,IAAI;ECgBb,KAAK,EDjBG,IAAI;CCkBf",
+    "sources": [
+        "Style.scss",
+        "_App.scss",
+        "_global_vars.scss",
+        "open_page/_Opening.scss",
+        "_global_vars.scss"
+    ],
+    "names": [],
+    "file": "Style.css"
+}
