@@ -1,5 +1,15 @@
 {
-  "extends": "eslint:recommended",
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true
+  },
   "rules": {
     "quotes": [2, "double"],
     "semi": [2, "always"],
@@ -7,8 +17,9 @@
     "brace-style": [2, "1tbs"],
     "camelcase": [2],
     "comma-dangle": [2, "never"],
-    "comma-spacing": [2, {"before": false, "after": true }],
+    "comma-spacing": [2, { "before": false, "after": true }],
     "line-comment-position": [2, "above"],
-    "no-lonely-if": [2]
+    "no-lonely-if": [2],
+    "no-unused-vars": ["off"]
   }
 }
