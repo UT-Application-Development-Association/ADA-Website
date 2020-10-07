@@ -16,7 +16,6 @@
     "no-undefined": [2],
     "brace-style": [2, "1tbs"],
     "camelcase": [2],
-    "comma-dangle": [2, "never"],
     "comma-spacing": [2, { "before": false, "after": true }],
     "line-comment-position": [2, "above"],
     "no-lonely-if": [2],
