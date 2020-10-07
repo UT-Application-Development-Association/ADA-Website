@@ -13,8 +13,11 @@
   - Live Sass Compiler(compile Sass to CSS)
   - Prettier(code formatter)
   (when you make a commit, make sure to format using prettier before commit)
+- **When you create a new class name, make sure to start the class name with `opening`, `main`, `left` or `right`! Otherwise, there might be future collision risks.**
 
 ## How to use Sass
-create your own Sass module with underscore "_" at beginning of filename, for example "_HelloWorld.scss".  
+create your own Sass module with underscore "_" at beginning of the filename, for example, "_HelloWorld.scss".  
 add `@import <your filename>` to Style.scss  
 click on `Watch Sass`(bottom right) compile your Sass code.  
+
+### Should you have any other questions, make sure to contact Frank or Leon. 
