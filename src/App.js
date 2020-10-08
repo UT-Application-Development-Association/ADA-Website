@@ -14,38 +14,47 @@ function App() {
   const size = useWindowSize();
   // mobile view
   if (size.width <= 766) {
-    return (
-      <div className="App">
-        <Opening setCurrPage={setCurrPage} />
-        <Main setCurrPage={setCurrPage} />
-        <Left setCurrPage={setCurrPage} />
-        <Right setCurrPage={setCurrPage} />
-      </div>
-    );
+    if (currPage === "Opening") {
+      return (
+        <div className="App">
+          <Opening setCurrPage={setCurrPage} isMobile={true} />
+        </div>
+      );
+    } else {
+      // three pages combine into one
+      return (
+        <div className="App">
+          <Main setCurrPage={setCurrPage} isMobile={true} />
+          <Left setCurrPage={setCurrPage} isMobile={true} />
+          <Right setCurrPage={setCurrPage} isMobile={true} />
+        </div>
+      );
+    }
   }
 
+  // browser view
   if (currPage === "Opening") {
     return (
       <div className="App">
-        <Opening setCurrPage={setCurrPage} />
+        <Opening setCurrPage={setCurrPage} isMobile={false} />
       </div>
     );
   } else if (currPage === "Main") {
     return (
       <div className="App">
-        <Main setCurrPage={setCurrPage} />
+        <Main setCurrPage={setCurrPage} isMobile={false} />
       </div>
     );
   } else if (currPage === "Left") {
     return (
       <div className="App">
-        <Left setCurrPage={setCurrPage} />
+        <Left setCurrPage={setCurrPage} isMobile={false} />
       </div>
     );
   } else if (currPage === "Right") {
     return (
       <div className="App">
-        <Right setCurrPage={setCurrPage} />
+        <Right setCurrPage={setCurrPage} isMobile={false} />
       </div>
     );
   } else {
