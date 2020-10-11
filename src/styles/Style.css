@@ -1,5 +1,4 @@
 .App {
-  text-align: center;
   font-family: "Poppins", sans-serif;
   position: relative;
   height: 0;
@@ -40,6 +39,10 @@
 
 .main-arrow-button.main-arrow-left {
   left: 30px;
+}
+
+.heading-container .heading {
+  font-size: 3rem;
 }
 
 .left-arrow-button {
