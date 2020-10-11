@@ -7,7 +7,7 @@ export default function Main(props) {
       Page Main
       {/* If in browser, display arror button */}
       {!props.isMobile && (
-        <div>
+        <div className="nav-arrows">
           <ArrowLeftSquare
             className="main-arrow-button main-arrow-left"
             onClick={() => props.setCurrPage("Left")}
@@ -18,6 +18,10 @@ export default function Main(props) {
           />
         </div>
       )}
+      <section className="intro-section"></section>
+      <section className="departments-section"></section>
+      <section className="gzh-section"></section>
+      <section className="timeline-section"></section>
     </div>
   );
 }
