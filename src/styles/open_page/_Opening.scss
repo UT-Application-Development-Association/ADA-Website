@@ -8,13 +8,13 @@
     height: 86px;
     width: 200px;
 
-    background-color: $primary_color;
-    color: $secondary_color;
+    background-color: $black;
+    color: $white;
     font-size: 28px;
     transition: 0.5s;
     &:hover  {
         cursor: pointer;
-        background-color: $secondary_color;
-        color: $primary_color;
+        background-color: $black;
+        color: $white;
     }
 }
