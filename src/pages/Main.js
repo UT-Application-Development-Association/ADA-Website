@@ -23,7 +23,11 @@ export default function Main(props) {
         <Heading text="基本介绍" />
       </section>
       <section className="departments-section"></section>
-      <section className="gzh-section"></section>
+      <section className="gzh-section">
+        <GongZhongHao text="公众号" />
+        <div>
+        </div>
+      </section>
       <section className="timeline-section"></section>
     </div>
   );
