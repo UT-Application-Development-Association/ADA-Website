@@ -1,5 +1,36 @@
+$black: #050505;
+$white:#f3f3f3;
+$bg_yellow: #ffedc1;
+$bg_gray: #E9E5E6;
+$bg_azure: #a6ecf0;
+$bg_aqua: #205d5f;
+
+$ada_blue: #47a3da;
+$ada_lightblue: #D9F8FF;
+$ada_grey: #C9C9C9;
+
+$font: "Poppins", sans-serif;
+
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+
+    @media (max-width: 768px) {
+        width: 80%;
+    }
+}
+
 .heading-container {
     .heading {
-        font-size: 3rem;
+        font-size: 3.5rem;
+        margin-bottom: .8rem;
+    }
+
+    .heading-line {
+        width: 10rem;
+        height: 2px;
+        background-color: $primary_color;
     }
 }

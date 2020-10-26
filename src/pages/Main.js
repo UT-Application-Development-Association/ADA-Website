@@ -19,8 +19,10 @@ export default function Main(props) {
           />
         </div>
       )}
-      <section className="intro-section">
-        <Heading text="基本介绍" />
+      <section className="intro-section container">
+        <div>
+          <Heading text="基本介绍" />
+        </div>
       </section>
       <section className="departments-section"></section>
       <section className="gzh-section"></section>
