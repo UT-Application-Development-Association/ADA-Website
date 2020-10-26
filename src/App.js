@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/Style.css";
 
 import Opening from "./pages/Opening";
