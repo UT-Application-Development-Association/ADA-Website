@@ -12,8 +12,8 @@
           transform: translate(-50%, -50%);
   height: 86px;
   width: 200px;
-  background-color: #000;
-  color: #fff;
+  background-color: #050505;
+  color: #f3f3f3;
   font-size: 28px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -21,8 +21,8 @@
 
 .opening-to-main-button:hover {
   cursor: pointer;
-  background-color: #fff;
-  color: #000;
+  background-color: #050505;
+  color: #f3f3f3;
 }
 
 .main-arrow-button {
@@ -61,7 +61,7 @@
 .heading-container .heading-line {
   width: 10rem;
   height: 2px;
-  background-color: #000;
+  background-color: #050505;
 }
 
 .left-arrow-button {
