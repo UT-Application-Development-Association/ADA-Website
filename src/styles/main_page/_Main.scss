@@ -1,9 +1,11 @@
 .main-arrow-button {
+    display: flex;
+    align-items: center;
     height: 40px;
     width: 40px;
     cursor: pointer;
 
-    position: absolute;
+    position: fixed;
     top: 30px;
     &.main-arrow-right {
         right: 30px;

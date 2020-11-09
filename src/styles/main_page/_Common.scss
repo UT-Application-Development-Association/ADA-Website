@@ -10,15 +10,33 @@
   }
 }
 
-.heading-container {
+.intro-container {
   .heading {
-    font-size: 3.5rem;
-    margin-bottom: 0.8rem;
+    font-size: 8.0rem;
+    margin-top: 10.0rem;
+    margin-bottom: 0.4rem;
+    color: $bg_aqua;
   }
 
   .heading-line {
     width: 10rem;
     height: 2px;
-    background-color: $black;
+    background-color: $bg_aqua;
   }
+
+  .intro {
+    font-size: 1.5rem;
+    margin-top: 3.0rem;
+    margin-bottom: 0.8rem;
+    color: $bg_aqua;
+  }
+}
+
+.my-button {
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  order: 1;
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { ArrowRightSquare, ArrowLeftSquare } from "react-bootstrap-icons";
 import Heading from "../components/main_page/Heading";
 import GongZhongHao from "../components/main_page/GongZhongHao.js";
+import { Button } from "react-bootstrap";
 
 export default function Main(props) {
   return (
