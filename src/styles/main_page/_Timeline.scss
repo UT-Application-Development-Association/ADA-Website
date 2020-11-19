@@ -1,0 +1,16 @@
+@import "../global_vars";
+
+.timeline-title {
+    position: absolute;
+    left: 0px;
+    color: white;
+}
+
+.timeline-background {
+    position: relative;
+    border-color:transparent $bg_aqua transparent;
+    border-style:solid; 
+    border-width:5vw 50vw 0px 50vw;
+    height:500px;
+    z-index: -1;
+  }

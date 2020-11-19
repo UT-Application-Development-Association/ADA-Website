@@ -2,6 +2,7 @@ import React from "react";
 import { ArrowRightSquare, ArrowLeftSquare } from "react-bootstrap-icons";
 import Heading from "../components/main_page/Heading";
 import GongZhongHao from "../components/main_page/GongZhongHao.js";
+import Timeline from "../components/main_page/Timeline.js";
 
 export default function Main(props) {
   return (
@@ -30,7 +31,11 @@ export default function Main(props) {
         <GongZhongHao text="公众号" />
         <div></div>
       </section>
-      <section className="timeline-section"></section>
+      <section className="timeline-section">
+        <div>
+          <Timeline/>
+        </div>
+      </section>
     </div>
   );
 }
