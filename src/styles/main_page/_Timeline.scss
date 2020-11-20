@@ -1,16 +1,83 @@
 @import "../global_vars";
 
-.timeline-title {
-    position: absolute;
-    left: 0px;
-    color: white;
+.timeline-container {
+    height: 450px;
+    padding-top: 5vw;
+    position: relative;
+    top: 50px;
+    overflow: hidden;
 }
 
 .timeline-background {
-    position: relative;
+    position: absolute;
+    top: 0px;
     border-color:transparent $bg_aqua transparent;
     border-style:solid; 
-    border-width:5vw 50vw 0px 50vw;
-    height:500px;
-    z-index: -1;
+    border-width:4vw 50vw 0px 50vw;
+    height: 500px;
   }
+
+.timeline-content {
+    width: 100%;
+    position: absolute;
+    top: 120px;
+    height: 400px;
+    background-color:rgba(255, 0, 0, 0.0);//for use of testing
+    overflow: scroll;
+    white-space: nowrap;
+}
+.timeline-bar {
+    position: absolute;
+    top: 170px;
+    height: 4px;
+    width: 100vw;
+    background-color:$white;
+    opacity: 0.5;
+}
+
+.timeline-event {
+    position: relative;
+    width: 160px;
+    height: 300px;
+    margin-left: 30px;
+    margin-right: 10px;
+    background-color: rgba(0, 255, 0, 0.0);//for use of testing
+    display: inline-block;
+}
+
+.event-name{
+    position: absolute;
+    top: 4px;
+    color: $white;
+    font-size: 22px;
+    opacity: 0.75;
+}
+
+.circle-on-bar {
+    position: absolute;
+    top: 37px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: $white;
+    opacity: 0.75;
+}
+
+.circle-event-connection {
+    position: absolute;
+    top: 67px;
+    left: 14.5px;
+    width: 1px;
+    height: 45px;
+    background-color: $white;
+    opacity: 0.75;
+}
+
+.event-picture {
+    position: absolute;
+    top: 112px;
+    width: 130px;
+    height: 100px;
+    background-color: $white;
+    opacity: 0.75;
+}

@@ -1,6 +1,7 @@
 @import "../global_vars";
 
 .container {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   width: 60%;
@@ -12,13 +13,20 @@
 
 .heading-container {
   .heading {
-    font-size: 3.5rem;
-    margin-bottom: 0.8rem;
+    font-size: 4.5rem;
+    margin-bottom: -0.8rem;
+    font-weight: 100;
+    &.white {
+      color: $white;
+    }
   }
 
   .heading-line {
-    width: 10rem;
+    width: 8rem;
     height: 2px;
     background-color: $black;
+    &.white {
+      background-color: $white;
+    }
   }
 }
