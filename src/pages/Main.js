@@ -33,9 +33,7 @@ export default function Main(props) {
       </section>
       <section className="timeline-section"></section>
       <section className='footnote'>
-        <div>
-          <Footnote />
-        </div>
+        <Footnote />
       </section>
     </div>
   );
