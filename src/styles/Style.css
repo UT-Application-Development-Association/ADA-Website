@@ -86,7 +86,7 @@
   color: rgb(82, 82, 82);
   background-color: rgba(253, 245, 222, 0.836);
   padding-top: 1.5em;
-  position: relative;
+  position: fixed;
   bottom: 0;
   width: 100%;
   padding-bottom: 1.5em;
