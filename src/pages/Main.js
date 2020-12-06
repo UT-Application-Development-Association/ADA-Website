@@ -2,6 +2,7 @@ import React from "react";
 import { ArrowRightSquare, ArrowLeftSquare } from "react-bootstrap-icons";
 import Heading from "../components/main_page/Heading";
 import GongZhongHao from "../components/main_page/GongZhongHao.js";
+import Footnote from "../components/main_page/Footnote";
 
 export default function Main(props) {
   return (
@@ -31,6 +32,9 @@ export default function Main(props) {
         <div></div>
       </section>
       <section className="timeline-section"></section>
+      <footer className='footnote'>
+        <Footnote />
+      </footer>
     </div>
   );
 }

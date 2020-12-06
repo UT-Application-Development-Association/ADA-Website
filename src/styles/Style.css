@@ -81,4 +81,26 @@
   top: 30px;
   left: 30px;
 }
+
+.main-footer {
+  color: #4d4b4b;
+  background-color: rgba(253, 245, 222, 0.836);
+  padding-bottom: 3em;
+  padding-top: 3em;
+}
+
+.main-footer .footer-heading {
+  margin-bottom: 1rem;
+  color: #050505;
+}
+
+.main-footer .contact-list li {
+  margin-bottom: .8rem;
+}
+
+.main-footer .icon {
+  height: 32px;
+  width: 32px;
+  margin-right: .5rem;
+}
 /*# sourceMappingURL=Style.css.map */
