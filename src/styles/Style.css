@@ -94,19 +94,11 @@
 
 .timeline-container {
   height: 450px;
-  padding-top: 5vw;
+  padding-top: 80px;
   position: relative;
   top: 50px;
   overflow: hidden;
-}
-
-.timeline-background {
-  position: absolute;
-  top: 0px;
-  border-color: transparent #205d5f transparent;
-  border-style: solid;
-  border-width: 4vw 50vw 0px 50vw;
-  height: 500px;
+  background-color: #205d5f;
 }
 
 .timeline-content {
@@ -116,6 +108,7 @@
   height: 400px;
   background-color: rgba(255, 0, 0, 0);
   overflow: scroll;
+  overflow-y: hidden;
   white-space: nowrap;
 }
 
@@ -173,5 +166,12 @@
   height: 100px;
   background-color: #f3f3f3;
   opacity: 0.75;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+}
+
+.event-picture:hover {
+  top: 100px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=Style.css.map */

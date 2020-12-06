@@ -2,20 +2,12 @@
 
 .timeline-container {
     height: 450px;
-    padding-top: 5vw;
+    padding-top: 80px;
     position: relative;
     top: 50px;
     overflow: hidden;
+    background-color: $bg_aqua;
 }
-
-.timeline-background {
-    position: absolute;
-    top: 0px;
-    border-color:transparent $bg_aqua transparent;
-    border-style:solid; 
-    border-width:4vw 50vw 0px 50vw;
-    height: 500px;
-  }
 
 .timeline-content {
     width: 100%;
@@ -24,6 +16,7 @@
     height: 400px;
     background-color:rgba(255, 0, 0, 0.0);//for use of testing
     overflow: scroll;
+    overflow-y: hidden;
     white-space: nowrap;
 }
 .timeline-bar {
@@ -80,4 +73,10 @@
     height: 100px;
     background-color: $white;
     opacity: 0.75;
+    transition: top 0.3s;
+}
+
+.event-picture:hover {
+    top: 100px;
+    cursor: pointer;
 }
