@@ -37,5 +37,5 @@ export default function Footnote(props) {
                 </div>
             </div>
         </div>
-    )
+    );
 }
