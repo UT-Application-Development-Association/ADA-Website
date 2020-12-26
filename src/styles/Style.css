@@ -54,6 +54,11 @@
   }
 }
 
+.container.timeline {
+  overflow: hidden;
+  height: 500px;
+}
+
 .heading-container .heading {
   font-size: 4.5rem;
   margin-bottom: -0.8rem;
@@ -65,7 +70,7 @@
 }
 
 .heading-container .heading-line {
-  width: 8rem;
+  width: 10rem;
   height: 2px;
   background-color: #050505;
 }
@@ -94,7 +99,7 @@
 
 .timeline-container {
   height: 450px;
-  padding-top: 80px;
+  padding-top: 55px;
   position: relative;
   top: 50px;
   overflow: hidden;

@@ -33,7 +33,7 @@ export default function Main(props) {
       </section>
       <section className="timeline-section">
         <div>
-          <Timeline text="TIMELINE"/>
+          <Timeline/>
         </div>
       </section>
     </div>

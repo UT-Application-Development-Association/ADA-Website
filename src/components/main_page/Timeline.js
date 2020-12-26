@@ -3,8 +3,8 @@ import React from "react";
 export default function Timeline(props) {
     return (
         <div className="timeline-container">
-            <div className="heading-container container" style={{overflow:"hidden", height:"500px"}}>
-                <div className="heading white">{props.text}</div>
+            <div className="heading-container container timeline">
+                <div className="heading white">TIMELINE</div>
                 <div className="heading-line white"></div>
                 <div className="timeline-bar"></div>
                 <div className="timeline-content">
