@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowLeftSquare } from "react-bootstrap-icons";
+import Gallery from "../components/right_page/Gallery";
 
 export default function Right(props) {
   return (
@@ -11,6 +12,12 @@ export default function Right(props) {
           onClick={() => props.setCurrPage("Main")}
         />
       )}
+
+      <section className="gallery-section">
+        <Gallery />
+        <div></div>
+      </section>
     </div>
+    
   );
 }
