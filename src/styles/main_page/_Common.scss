@@ -1,42 +1,24 @@
 @import "../global_vars";
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-
-  @media (max-width: 768px) {
-    width: 80%;
-  }
-}
-
-.intro-container {
+.heading-container {
   .heading {
-    font-size: 8.0rem;
-    margin-top: 10.0rem;
-    margin-bottom: 0.4rem;
-    color: $bg_aqua;
+    font-size: 3vw;
+    margin-bottom: 0.8rem;
   }
 
   .heading-line {
     width: 10rem;
     height: 2px;
-    background-color: $bg_aqua;
+    background-color: $black;
   }
 
-  .intro {
-    font-size: 1.5rem;
-    margin-top: 3.0rem;
-    margin-bottom: 0.8rem;
-    color: $bg_aqua;
+  @media (max-width: 700px) {
+    .heading {
+      font-size: 6vw;
+    } 
   }
 }
 
-.my-button {
-  display: flex;
-  align-items: center;
-}
-
-.right {
-  order: 1;
+.paragraph {
+  font-size: 1vw;
 }
