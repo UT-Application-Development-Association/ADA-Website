@@ -13,6 +13,8 @@
   - Live Sass Compiler(compile Sass to CSS)
   - Prettier(code formatter)
   (when you make a commit, make sure to format using prettier before commit)
+- click the **Watch Sass** button from bottom right side of vscode. This will generate css files for you. This is important!! If you don't do this then there would be no style. 
+
 - **When you create a new class name, make sure to start the class name with `opening`, `main`, `left` or `right`! Otherwise, there might be future collision risks.**
 
 ## How to use Sass
