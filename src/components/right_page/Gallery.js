@@ -1,11 +1,11 @@
 import React from "react";
 
-import Heading from "../../components/main_page/Heading";
 import deptEvent from "../../assets/img/dept_event.png";
 import deptMkt from "../../assets/img/dept_mkt.png";
 import deptPr from "../../assets/img/dept_pr.png";
 import deptTech from "../../assets/img/dept_tech.png";
 
+//padding and width for image should be adjusted when replacing image source
 export default function Gallery(props){
     return(
         <div className="gallery-container">
