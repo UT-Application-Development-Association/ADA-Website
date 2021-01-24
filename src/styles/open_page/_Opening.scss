@@ -1,20 +1,37 @@
 @import "../global_vars";
 
-.opening-to-main-button {
+
+.BackgroundImage{
+    width: 100%;
+    height: auto;
+}
+
+
+.Logo{
     position: fixed;
+    max-width: 800px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background: transparent;
+    width: 90%;
+}
+
+.opening-to-main-button {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
     height: 86px;
     width: 200px;
-
-    background-color: $black;
-    color: $white;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    color: white;
     font-size: 28px;
     transition: 0.5s;
     &:hover  {
         cursor: pointer;
-        background-color: $black;
-        color: $white;
+        color: transparent;
     }
 }
