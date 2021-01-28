@@ -20,7 +20,7 @@ export default function Main(props) {
           />
         </div>
       )}
-      <section className="intro-section container">
+      <section className="intro-section">
         <IntroSection/>
       </section>
       <section className="departments-section"></section>
