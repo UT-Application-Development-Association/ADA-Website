@@ -3,6 +3,7 @@ import { ArrowRightSquare, ArrowLeftSquare } from "react-bootstrap-icons";
 import Heading from "../components/main_page/Heading";
 import GongZhongHao from "../components/main_page/GongZhongHao.js";
 import Footnote from "../components/main_page/Footnote";
+import Department from "../components/main_page/Department.js";
 
 export default function Main(props) {
   return (
@@ -26,7 +27,11 @@ export default function Main(props) {
           <Heading text="基本介绍" />
         </div>
       </section>
-      <section className="departments-section"></section>
+      <section className="departments-section">
+        <div>
+          <Department text="部门介绍"></Department>
+        </div>
+      </section>
       <section className="gzh-section">
         <GongZhongHao text="公众号" />
         <div></div>
