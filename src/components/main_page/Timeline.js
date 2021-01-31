@@ -1,4 +1,5 @@
-import React from "react";
+import React from "react"
+import TimelineEvent from "./TimelineEvent"
 
 export default function Timeline(props) {
     return (
@@ -8,42 +9,13 @@ export default function Timeline(props) {
                 <div className="heading-line white"></div>
                 <div className="timeline-bar"></div>
                 <div className="timeline-content">
-                    <div className="timeline-event">
-                        <div className="event-name"><p>Event 01</p></div>
-                        <div className="circle-on-bar"></div>
-                        <div className="circle-event-connection"></div>
-                        <div className="event-picture"></div>
-                    </div>
-                    <div className="timeline-event">
-                        <div className="event-name"><p>Event 02</p></div>
-                        <div className="circle-on-bar"></div>
-                        <div className="circle-event-connection"></div>
-                        <div className="event-picture"></div>
-                    </div>
-                    <div className="timeline-event">
-                        <div className="event-name"><p>Event 03</p></div>
-                        <div className="circle-on-bar"></div>
-                        <div className="circle-event-connection"></div>
-                        <div className="event-picture"></div>
-                    </div>
-                    <div className="timeline-event">
-                        <div className="event-name"><p>Event 04</p></div>
-                        <div className="circle-on-bar"></div>
-                        <div className="circle-event-connection"></div>
-                        <div className="event-picture"></div>
-                    </div>
-                    <div className="timeline-event">
-                        <div className="event-name"><p>Event 05</p></div>
-                        <div className="circle-on-bar"></div>
-                        <div className="circle-event-connection"></div>
-                        <div className="event-picture"></div>
-                    </div>
-                    <div className="timeline-event">
-                        <div className="event-name"><p>Event 06</p></div>
-                        <div className="circle-on-bar"></div>
-                        <div className="circle-event-connection"></div>
-                        <div className="event-picture"></div>
-                    </div>
+                    <TimelineEvent name="Event 01"/>
+                    <TimelineEvent name="Event 02"/>
+                    <TimelineEvent name="Event 03"/>
+                    <TimelineEvent name="Event 04"/>
+                    <TimelineEvent name="Event 05"/>
+                    <TimelineEvent name="Event 06"/>
+                    <TimelineEvent name="Event 07"/>
                 </div>
             </div>   
         </div>
