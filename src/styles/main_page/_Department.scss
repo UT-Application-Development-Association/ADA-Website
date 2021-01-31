@@ -4,4 +4,15 @@
     .departments-title {
         text-align: center;
     }
+
+    .container {
+        .col-sm {
+            width: 45vw;
+            height: auto;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
 }
