@@ -1,13 +1,12 @@
 import React from "react";
 import { ArrowRightSquare, ArrowLeftSquare } from "react-bootstrap-icons";
-import Heading from "../components/main_page/Heading";
+import IntroSection from "../components/main_page/IntroSection";
 import GongZhongHao from "../components/main_page/GongZhongHao.js";
 import Footnote from "../components/main_page/Footnote";
 
 export default function Main(props) {
   return (
     <div>
-      Page Main
       {/* If in browser, display arrow button */}
       {!props.isMobile && (
         <div className="nav-arrows">
@@ -21,10 +20,8 @@ export default function Main(props) {
           />
         </div>
       )}
-      <section className="intro-section container">
-        <div>
-          <Heading text="基本介绍" />
-        </div>
+      <section className="intro-section">
+        <IntroSection/>
       </section>
       <section className="departments-section"></section>
       <section className="gzh-section">
