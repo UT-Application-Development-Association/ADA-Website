@@ -8,7 +8,10 @@ export default function TimelineEvent(props) {
       </div>
       <div className="circle-on-bar"></div>
       <div className="circle-event-connection"></div>
-      <div className="event-picture"></div>
+      <div className="event-picture">
+        <img src={props.pictureUrl}></img>
+        <a href={props.eventUrl}></a>
+      </div>
     </div>
   );
 }

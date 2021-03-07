@@ -170,9 +170,24 @@
   width: 130px;
   height: 100px;
   background-color: #f3f3f3;
-  opacity: 0.75;
   -webkit-transition: top 0.3s;
   transition: top 0.3s;
+  overflow: hidden;
+}
+
+.event-picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.event-picture a {
+  position: relative;
+  top: -100px;
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 .event-picture:hover {

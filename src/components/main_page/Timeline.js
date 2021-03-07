@@ -9,13 +9,36 @@ export default function Timeline(props) {
                 <div className="heading-line white"></div>
                 <div className="timeline-bar"></div>
                 <div className="timeline-content">
-                    <TimelineEvent name="Event 01"/>
-                    <TimelineEvent name="Event 02"/>
-                    <TimelineEvent name="Event 03"/>
-                    <TimelineEvent name="Event 04"/>
-                    <TimelineEvent name="Event 05"/>
-                    <TimelineEvent name="Event 06"/>
-                    <TimelineEvent name="Event 07"/>
+
+                    <TimelineEvent 
+                    name="Event 01" 
+                    pictureUrl = "http://n.sinaimg.cn/sinacn10108/34/w500h334/20200218/7c69-iprtayz1346642.jpg" 
+                    eventUrl = "https://www.google.com/"/>
+
+                    <TimelineEvent 
+                    name="Event 02" 
+                    pictureUrl = "http://n.sinaimg.cn/sinacn10108/34/w500h334/20200218/7c69-iprtayz1346642.jpg" 
+                    eventUrl = "https://www.google.com/"/>
+
+                    <TimelineEvent 
+                    name="Event 03" 
+                    pictureUrl = "http://n.sinaimg.cn/sinacn10108/34/w500h334/20200218/7c69-iprtayz1346642.jpg" 
+                    eventUrl = "https://www.google.com/"/>
+
+                    <TimelineEvent 
+                    name="Event 04" 
+                    pictureUrl = "http://n.sinaimg.cn/sinacn10108/34/w500h334/20200218/7c69-iprtayz1346642.jpg" 
+                    eventUrl = "https://www.google.com/"/>
+
+                    <TimelineEvent 
+                    name="Event 05" 
+                    pictureUrl = "http://n.sinaimg.cn/sinacn10108/34/w500h334/20200218/7c69-iprtayz1346642.jpg" 
+                    eventUrl = "https://www.google.com/"/>
+
+                    <TimelineEvent 
+                    name="Event 06" 
+                    pictureUrl = "http://n.sinaimg.cn/sinacn10108/34/w500h334/20200218/7c69-iprtayz1346642.jpg" 
+                    eventUrl = "https://www.google.com/"/>
                 </div>
             </div>   
         </div>
