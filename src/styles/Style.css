@@ -97,6 +97,14 @@
   left: 30px;
 }
 
+.button-container {
+  height: 50px;
+  position: absolute;
+  top: 300px;
+  left: 0;
+  right: 0;
+}
+
 .timeline-container {
   height: 450px;
   padding-top: 55px;
@@ -193,5 +201,45 @@
 .event-picture:hover {
   top: 100px;
   cursor: pointer;
+}
+
+.left-button {
+  position: relative;
+  left: -40px;
+  cursor: pointer;
+}
+
+.left-button:after, .left-button:before {
+  border: 20px solid transparent;
+  border-right: 20px solid #205d5f;
+  position: absolute;
+  top: 0;
+  right: -3px;
+  content: ' ';
+}
+
+.left-button:before {
+  border-right-color: #f3f3f3;
+  right: 0px;
+}
+
+.right-button {
+  position: absolute;
+  right: -80px;
+  cursor: pointer;
+}
+
+.right-button:after, .right-button:before {
+  border: 20px solid transparent;
+  border-left: 20px solid #205d5f;
+  position: absolute;
+  top: 0;
+  right: 3px;
+  content: ' ';
+}
+
+.right-button:before {
+  border-left-color: #f3f3f3;
+  right: 0px;
 }
 /*# sourceMappingURL=Style.css.map */
