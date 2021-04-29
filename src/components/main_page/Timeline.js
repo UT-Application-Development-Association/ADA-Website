@@ -1,6 +1,13 @@
 import React from "react"
 import TimelineEvent from "./TimelineEvent"
 
+import Club_Carnival from "../../assets/img/Club_Carnival.png"
+import new_meet from "../../assets/img/new_meet.jpeg"
+import Innovation_Fair from "../../assets/img/Innovation_Fair.jpeg"
+import Online_Club_Fair from "../../assets/img/Online_Club_Fair.png"
+import Course_Wiki from "../../assets/img/Course_Wiki.jpeg"
+import UTHack from "../../assets/img/UTHack.png"
+
 export default function Timeline(props) {
     return (
         <div className="timeline-container">
@@ -15,33 +22,33 @@ export default function Timeline(props) {
                 <div id = "timeline-content" className="timeline-content">
 
                     <TimelineEvent 
-                    name="Event 01" 
-                    pictureUrl = "http://n.sinaimg.cn/sinacn10108/34/w500h334/20200218/7c69-iprtayz1346642.jpg" 
+                    name="Club Carnival" 
+                    pictureUrl = {Club_Carnival}
                     eventUrl = "https://www.google.com/"/>
 
                     <TimelineEvent 
-                    name="Event 02" 
-                    pictureUrl = "http://n.sinaimg.cn/sinacn10108/34/w500h334/20200218/7c69-iprtayz1346642.jpg" 
+                    name="Meeting" 
+                    pictureUrl = {new_meet}
                     eventUrl = "https://www.google.com/"/>
 
                     <TimelineEvent 
-                    name="Event 03" 
-                    pictureUrl = "http://n.sinaimg.cn/sinacn10108/34/w500h334/20200218/7c69-iprtayz1346642.jpg" 
+                    name="Innovation Fair" 
+                    pictureUrl = {Innovation_Fair}
                     eventUrl = "https://www.google.com/"/>
 
                     <TimelineEvent 
-                    name="Event 04" 
-                    pictureUrl = "http://n.sinaimg.cn/sinacn10108/34/w500h334/20200218/7c69-iprtayz1346642.jpg" 
+                    name="Online Club Fair" 
+                    pictureUrl = {Online_Club_Fair}
                     eventUrl = "https://www.google.com/"/>
 
                     <TimelineEvent 
-                    name="Event 05" 
-                    pictureUrl = "http://n.sinaimg.cn/sinacn10108/34/w500h334/20200218/7c69-iprtayz1346642.jpg" 
+                    name="Course Wiki" 
+                    pictureUrl = {Course_Wiki}
                     eventUrl = "https://www.google.com/"/>
 
                     <TimelineEvent 
-                    name="Event 06" 
-                    pictureUrl = "http://n.sinaimg.cn/sinacn10108/34/w500h334/20200218/7c69-iprtayz1346642.jpg" 
+                    name="UTHack 2021" 
+                    pictureUrl = {UTHack}
                     eventUrl = "https://www.google.com/"/>
                 </div>
             </div>   
