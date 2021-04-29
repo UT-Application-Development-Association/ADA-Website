@@ -109,15 +109,18 @@
         position: relative;
         left: -40px;
         cursor: pointer;
-
+        @media (max-width: 768px) {
+            display: none;
+          }
     }
+
     .left-button:after, .left-button:before {
         border: 20px solid transparent;
         border-right: 20px solid $bg_aqua;
         position: absolute;
         top: 0;
         right: -3px;
-        content: ' '
+        content: ' ';
     }
     
     .left-button:before {
@@ -129,15 +132,18 @@
         position: absolute;
         right: -80px;
         cursor: pointer;
-
+        @media (max-width: 768px) {
+            display: none;
+          }
     }
+
     .right-button:after, .right-button:before {
         border: 20px solid transparent;
         border-left: 20px solid $bg_aqua;
         position: absolute;
         top: 0;
         right: 3px;
-        content: ' '
+        content: ' ';
     }
     
     .right-button:before {
@@ -145,4 +151,3 @@
         right: 0px;
     }
 }
-

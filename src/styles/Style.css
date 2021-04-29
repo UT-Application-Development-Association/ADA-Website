@@ -209,6 +209,12 @@
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .timeline-container .left-button {
+    display: none;
+  }
+}
+
 .timeline-container .left-button:after, .timeline-container .left-button:before {
   border: 20px solid transparent;
   border-right: 20px solid #205d5f;
@@ -227,6 +233,12 @@
   position: absolute;
   right: -80px;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .timeline-container .right-button {
+    display: none;
+  }
 }
 
 .timeline-container .right-button:after, .timeline-container .right-button:before {
