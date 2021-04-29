@@ -32,9 +32,7 @@ export default function Main(props) {
         <div></div>
       </section>
       <section className="timeline-section">
-        <div>
-          <Timeline/>
-        </div>
+        <Timeline/>
       </section>
     </div>
   );
