@@ -1,0 +1,83 @@
+@import "../global_vars";
+
+.full-timeline-container{
+    padding-bottom: 1rem;
+
+    .events-container {
+        margin-top: 1rem;
+        height: 60vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .heading {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+    }
+
+
+    .timeline-event{
+        // display: flex;
+        // flex-direction: row;
+        margin-top: 2rem;
+
+        .img-container{
+            height: 12rem;
+            max-width: 20rem;
+            object-fit: cover;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            @media (max-width: 450px){
+                height: 10rem;
+                max-width: 18rem;
+            }
+        }
+
+        .info-container {
+            font-family: $font;
+            .name, a {
+                color: $black;
+                // text-decoration: none;
+                font-weight: 600;
+            }
+
+            .date {
+                color: #333333; 
+                font-style: italic;
+                font-size: 1rem;
+            }
+
+            .description {
+                color: #333333;
+                font-size: 1rem;
+                margin-top: .8rem;
+            }
+        }
+    }
+
+    /* custom scrollbar */
+    ::-webkit-scrollbar {
+        width: 20px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: $bg_gray;
+        border-radius: 20px;
+        border: 6px solid transparent;
+        background-clip: content-box;
+        transition-duration: .5s;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #cacaca;
+    }
+}
