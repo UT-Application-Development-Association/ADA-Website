@@ -1,31 +1,46 @@
 import React from "react";
-import tech from "../../assets/img/dept_tech.png";
-import pr from "../../assets/img/dept_pr.png";
-import mkt from "../../assets/img/dept_mkt.png";
-import event from "../../assets/img/dept_event.png";
+import tech from "../../assets/img/TECH.png";
+import pr from "../../assets/img/PR.png";
+import mkt from "../../assets/img/MKT.png";
+import event from "../../assets/img/EVENT.png";
 
 export default function Department(props) {
     return (
         <div className="departments-section">
-            <h1>This is Our Departments</h1>
             <div className="departments-title">
                 <h1>Departments</h1>
             </div>
             <div className="container">
                 <div className="row">
                     <div className="col-sm">
-                        <img src={ tech } alt=""></img>
+                        <img src={ tech } class="department-image" alt=""></img>
+                        <div class="department-overlay">
+                            <div class="department-title"> Tech Department </div>
+                            <div class="department-description">This is a description of tech department.</div>
+                        </div>
                     </div>
                     <div className="col-sm">
-                        <img src={ pr } alt=""></img>
+                        <img src={ pr } class="department-image" alt=""></img>
+                        <div class="department-overlay">
+                            <div class="department-title"> Tech Department </div>
+                            <div class="department-description">This is a description of pr department.</div>
+                        </div>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-sm">
-                        <img src={ mkt } alt=""></img>
+                        <img src={ mkt } class="department-image" alt=""></img>
+                        <div class="department-overlay">
+                            <div class="department-title"> Tech Department </div>
+                            <div class="department-description">This is a description of mkt department.</div>
+                        </div>
                     </div>
                     <div className="col-sm">
-                        <img src={ event } alt=""></img>
+                        <img src={ event } class="department-image" alt=""></img>
+                        <div class="department-overlay">
+                            <div class="department-title"> Event Department </div>
+                            <div class="department-description">This is a description of event department.</div>
+                        </div>
                     </div>
                 </div>
             </div>
