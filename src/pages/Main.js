@@ -2,6 +2,7 @@ import React from "react";
 import { ArrowRightSquare, ArrowLeftSquare } from "react-bootstrap-icons";
 import IntroSection from "../components/main_page/IntroSection";
 import GongZhongHao from "../components/main_page/GongZhongHao.js";
+import Timeline from "../components/main_page/Timeline.js";
 import Footnote from "../components/main_page/Footnote";
 
 export default function Main(props) {
@@ -27,6 +28,9 @@ export default function Main(props) {
       <section className="gzh-section">
         <GongZhongHao text="公众号" />
         <div></div>
+      </section>
+      <section className="timeline-section">
+        <Timeline/>
       </section>
       <section className="timeline-section"></section>
       <footer className='footnote'>
