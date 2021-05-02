@@ -31,7 +31,7 @@ export default function FullTimeline(props) {
                     date="12/2020"
                 />
                 <FullTimelineEvent  
-                    name="举办 Online Club Fair 2019" 
+                    name="举办 Online Club Fair 2020" 
                     img={imgOnlineClubFair2020}
                     url="https://www.uoftclubfair.com/clubs/UTADA/"
                     description="合办线上Club Fair"
