@@ -5,8 +5,12 @@
         box-sizing: border-box;
     }
 
+    .heading-container {
+        margin-bottom: 2rem;
+    }
+
     .img-row {
-        margin-top: 8px;
+        margin-top: 1rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -15,6 +19,38 @@
             max-width: 100%;
         }
     }
+
+    .gallery-img-container {
+        position: relative;
+        box-shadow: 2px 2px 2px #00000050;
+
+
+        .img-caption {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            padding: 1rem;
+            
+            background-color: $bg_dark;
+            color: $white;
+
+            opacity: 0;
+
+            transition-duration: .3s;
+
+            letter-spacing: 1px;
+        }
+
+    }
+
+    .gallery-img-container:hover {
+        .img-caption {
+            opacity: 1;
+        }
+    }
+
 
 }
 
