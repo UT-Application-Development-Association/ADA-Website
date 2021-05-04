@@ -1,13 +1,16 @@
 @import "../global_vars";
 
 .gallery-container{
-    * {
-        box-sizing: border-box;
-    }
+    overflow-y: auto;
+    max-height: 88vh;
+    scroll-behavior: smooth;
 
     .heading-container {
+        position: relative;
         margin-bottom: 2rem;
     }
+
+    
 
     .img-row {
         margin-top: 1rem;
@@ -32,8 +35,9 @@
             left: 0;
 
             padding: 1rem;
+            padding-top: 3rem;
             
-            background-color: $bg_dark;
+            background-image: linear-gradient(to bottom, transparent 10%, #000 100%);
             color: $white;
 
             opacity: 0;
@@ -51,6 +55,16 @@
         }
     }
 
-
+    
 }
+@media (max-width: 767px){
+    .gallery-container .heading-container{
+        left: -8.4%;
+    }
 
+    .gallery-container > .row > .col-10{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+}
