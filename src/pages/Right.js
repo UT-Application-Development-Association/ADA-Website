@@ -4,8 +4,7 @@ import Gallery from "../components/right_page/Gallery";
 
 export default function Right(props) {
   return (
-    <div>
-      Page Right
+    <div className="right-page">
       {!props.isMobile && (
         <ArrowLeftSquare
           className="right-arrow-button"
@@ -15,7 +14,6 @@ export default function Right(props) {
 
       <section className="gallery-section">
         <Gallery />
-        <div></div>
       </section>
     </div>
     

@@ -5,35 +5,15 @@
         box-sizing: border-box;
     }
 
-    //not used yet
-    .img-background {
-        background-color: $bg_yellow;
-    }
-
-    .text-us{
-        text-align: center;
-    }
-
-    .text-line-middle {
-        width: 4rem;
-        height: 2px;
-        margin: auto;
-        margin-top: 0.8rem;
-        margin-bottom: 10px;
-        background-color: $black;
-    }
-
-    .text-line-left {
-        width: 5rem;
-        height: 2px;
-        margin-top: 0.4rem;
-        margin-bottom: 10px;
-        background-color: $black;
-    }
-
-    img {
+    .img-row {
         margin-top: 8px;
-    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        img {
+            max-width: 100%;
+        }
     }
 
 }

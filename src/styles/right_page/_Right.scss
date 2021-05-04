@@ -1,3 +1,6 @@
+@import "../global_vars";
+
+
 .right-arrow-button {
     height: 40px;
     width: 40px;
@@ -6,4 +9,9 @@
     position: absolute;
     top: 30px;
     left: 30px;
+}
+
+.right-page {
+    padding-top: 5rem;
+    background-color: $bg-gray;
 }
