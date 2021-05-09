@@ -1,63 +1,161 @@
 @import "../global_vars";
 
-.departments-section {
+// .departments-section {
+//     padding-bottom: 5rem;
+
+//     .departments-title {
+//         text-align: center;
+//         margin-bottom: 5rem;
+//     }
+
+//     .container {
+//         .col-sm {
+//             width: 50vw;
+//             height: auto;
+//             .department-image {
+//                 display: block;
+//                 width: 30rem;
+//                 height: 30rem;
+//             }
+
+//             .department-overlay {
+//                 position: absolute;
+//                 top: 0;
+//                 left: 0;
+//                 width: 100%;
+//                 height: 100%;
+//                 background: rgba(0, 0, 0, 0.6);
+//                 color: white;
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: center;
+//                 justify-content: center;
+//                 opacity: 0;
+//                 transition: opacity 0.25s;
+//             }
+
+//             .department-overlay > * {
+//                 transform: translateY(20px);
+//                 transition: transform 0.25s;
+//             }
+
+//             .department-overlay:hover {
+//                 opacity: 1;
+//             }
+
+//             .department-overlay:hover > * {
+//                 transform: translateY(0);
+//             }
+
+//             .department-title {
+//                 font-size: 2rem;
+//                 font-weight: bold;
+//             }
+
+//             .department-description {
+//                 font-size: 1rem;
+//                 margin-top: 0.2rem;
+//             }
+
+//             margin-bottom: 2rem;
+//         }
+//     }
+// }
+
+.department-section {
+    padding-top: 5rem;
     padding-bottom: 5rem;
-
-    .departments-title {
-        text-align: center;
-        margin-bottom: 5rem;
+    .heading-container {
+        margin-bottom: 2rem;
     }
+    .dept {
+        position: relative;
+        display: flex;
 
-    .container {
-        .col-sm {
-            width: 50vw;
-            height: auto;
-            .department-image {
-                display: block;
-                width: 30rem;
-                height: 30rem;
-            }
+        height: 24rem;
 
-            .department-overlay {
-                position: absolute;
-                top: 0;
-                left: 0;
+        .dept-name {
+            // font-weight: bold;
+            font-size: calc(2rem + 2vw);
+            letter-spacing: .6rem;
+            text-align: center;
+            margin: .8rem
+        }
+
+        .dept-content {
+            width: 100%;
+            max-width: 30rem;
+            height: 20rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dept-description {
+            // display: none;
+            width: 90%;
+            position: absolute;
+            opacity: 0;
+            transition-duration: .3s;
+            padding: 2rem;
+            z-index: 10;
+            font-size: calc(1rem - .01vw);
+        }
+
+        .dept-img-container {
+            width: 100%;
+            height: 100%;
+
+            transition-duration: .3s;
+            z-index: 20;
+
+            .dept-img {
                 width: 100%;
                 height: 100%;
-                background: rgba(0, 0, 0, 0.6);
-                color: white;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                opacity: 0;
-                transition: opacity 0.25s;
+                object-fit: contain;
             }
-
-            .department-overlay > * {
-                transform: translateY(20px);
-                transition: transform 0.25s;
-            }
-
-            .department-overlay:hover {
-                opacity: 1;
-            }
-
-            .department-overlay:hover > * {
-                transform: translateY(0);
-            }
-
-            .department-title {
-                font-size: 2rem;
-                font-weight: bold;
-            }
-
-            .department-description {
-                font-size: 1rem;
-                margin-top: 0.2rem;
-            }
-
-            margin-bottom: 2rem;
         }
+    }
+
+    .dept:hover, .dept:active, .dept:focus {
+        .dept-description {
+            opacity: 1;
+            z-index: 20;
+        }
+
+        .dept-img-container {
+            opacity: 0.2;
+            z-index: 10;
+        }
+    }
+
+    .dept-tech {
+        flex-direction: column;
+    }
+
+    .dept-event {
+        flex-direction: row-reverse;
+        .dept-name {
+            writing-mode: vertical-rl;
+        }
+
+        .dept-description {
+            width: 85%;
+        }
+    }
+
+    .dept-pr {
+        flex-direction: row;
+        .dept-name {
+            writing-mode: vertical-rl;
+        }
+
+        .dept-description {
+            width: 85%;
+        }
+    }
+
+    .dept-mkt {
+        flex-direction: column-reverse;
     }
 }
