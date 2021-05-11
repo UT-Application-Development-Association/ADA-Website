@@ -15,52 +15,21 @@ export default function Department(props) {
     return (
         <div className="departments-section container">
             <Heading text="部门介绍" />
-            <div className="row">
-                <div className="col-12 col-sm-8 col-md-5 my-2 mx-auto mr-md-2">
+            <div className="dept-row">
+                <div className="my-auto ml-md-auto">
                     <DeptTech img={techImg} />
                 </div>
-                <div className="col-12 col-sm-8 col-md-5 my-2 mx-auto ml-md-2">
+                <div className="my-auto mr-md-auto">
                     <DeptEvent img={eventImg} />
                 </div>
-                <div className="col-12 col-sm-8 col-md-5 my-2 mx-auto mr-md-2">
+            </div>
+            <div className="dept-row">
+                <div className="my-auto ml-md-auto">
                     <DeptPr img={prImg} />
                 </div>
-                <div className="col-12 col-sm-8 col-md-5 my-2 mx-auto ml-md-2">
+                <div className="my-auto mr-md-auto">
                     <DeptMkt img={mktImg} />
                 </div>
-
-                {/* <div className="row">
-                    <div className="col-sm">
-                        <img src={ tech } className="department-image" alt=""></img>
-                        <div className="department-overlay">
-                            <div className="department-title"> Tech Department </div>
-                            <div className="department-description">This is a description of tech department.</div>
-                        </div>
-                    </div>
-                    <div className="col-sm">
-                        <img src={ pr } className="department-image" alt=""></img>
-                        <div className="department-overlay">
-                            <div className="department-title"> Tech Department </div>
-                            <div className="department-description">This is a description of pr department.</div>
-                        </div>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-sm">
-                        <img src={ mkt } className="department-image" alt=""></img>
-                        <div className="department-overlay">
-                            <div className="department-title"> Tech Department </div>
-                            <div className="department-description">This is a description of mkt department.</div>
-                        </div>
-                    </div>
-                    <div className="col-sm">
-                        <img src={ event } className="department-image" alt=""></img>
-                        <div className="department-overlay">
-                            <div className="department-title"> Event Department </div>
-                            <div className="department-description">This is a description of event department.</div>
-                        </div>
-                    </div>
-                </div> */}
             </div>
         </div>
     );

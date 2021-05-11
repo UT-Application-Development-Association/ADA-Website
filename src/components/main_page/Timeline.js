@@ -16,7 +16,7 @@ export default function Timeline(props) {
                 <span className="left-button" onClick={() => timelineMoveLeft()}></span>
                 <span className="right-button" onClick={() => timelineMoveRight()}></span>
             </div>
-            <div className="heading-container container timeline">
+            <div className="container timeline">
                 <Heading text="TIMELINE" white="true" />
                 
                 <div className="timeline-bar"></div>

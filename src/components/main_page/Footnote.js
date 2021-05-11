@@ -1,15 +1,17 @@
 import React from "react";
+import Heading from "./Heading";
 
 
 export default function Footnote(props) {
     return (
         <div className="main-footer">
             <div className="container">
-                <div className="row footer-heading">
+                {/* <div className="row footer-heading">
                     <h3>
                         Connect with Us
                     </h3>
-                </div>
+                </div> */}
+                <Heading text="联系我们" white="true" />
                 <div className="row">
                     <ul className="list-unstyled contact-list">
                         <li>
