@@ -4,6 +4,7 @@ import IntroSection from "../components/main_page/IntroSection";
 import GongZhongHao from "../components/main_page/GongZhongHao.js";
 import Timeline from "../components/main_page/Timeline.js";
 import Footnote from "../components/main_page/Footnote";
+import Department from "../components/main_page/Department.js";
 
 export default function Main(props) {
   return (
@@ -24,7 +25,9 @@ export default function Main(props) {
       <section className="intro-section">
         <IntroSection/>
       </section>
-      <section className="departments-section"></section>
+      <section className="department-section">
+        <Department></Department>
+      </section>
       <section className="gzh-section">
         <GongZhongHao text="公众号" />
         <div></div>
