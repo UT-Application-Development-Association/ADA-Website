@@ -18,8 +18,6 @@ export default function Timeline(props) {
             </div>
             <div className="heading-container container timeline">
                 <Heading text="TIMELINE" white="true" />
-                {/* <div className="heading white">TIMELINE</div>
-                <div className="heading-line white"></div> */}
                 
                 <div className="timeline-bar"></div>
                 <div id = "timeline-content" className="timeline-content">
