@@ -31,6 +31,8 @@
         width: 22rem;
 
         background-color: #fff;
+        border-radius: 5px;
+        transition-duration: .4s;
 
         .dept-name {
             font-size: calc(2rem + 1.5vw);
@@ -64,7 +66,7 @@
             font-size: calc(1rem - .05vw);
 
             opacity: 0;
-            transition-duration: .3s;
+            transition-duration: .4s;
             padding: 1rem;
             z-index: 10;
         }
@@ -76,7 +78,7 @@
             justify-content: center;
             align-items: center;
 
-            transition-duration: .3s;
+            transition-duration: .4s;
             z-index: 20;
 
             .dept-img {
@@ -94,6 +96,7 @@
     }
 
     .dept:hover, .dept:active, .dept:focus {
+        box-shadow: 3px 3px 3px #33333333;
         .dept-description {
             opacity: 1;
             z-index: 20;

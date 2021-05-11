@@ -1,16 +1,19 @@
 @import "../global_vars";
 
+.right-page {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
 .gallery-container{
     overflow-y: auto;
     max-height: 88vh;
     scroll-behavior: smooth;
 
-    .heading-container {
-        position: relative;
-        margin-bottom: 2rem;
+    ::-webkit-scrollbar {
+        display: none;
     }
-
-    
 
     .img-row {
         margin-top: 1rem;
