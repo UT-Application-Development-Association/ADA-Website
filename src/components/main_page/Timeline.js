@@ -1,5 +1,6 @@
 import React from "react";
 import TimelineEvent from "./TimelineEvent";
+import Heading from "./Heading";
 
 import imgClubCarnival2019 from "../../assets/img/events/ClubCarnival2019.jpeg";
 import imgWelcoming2019 from "../../assets/img/events/Welcoming2019.jpeg";
@@ -16,8 +17,8 @@ export default function Timeline(props) {
                 <span className="right-button" onClick={() => timelineMoveRight()}></span>
             </div>
             <div className="heading-container container timeline">
-                <div className="heading white">TIMELINE</div>
-                <div className="heading-line white"></div>
+                <Heading text="TIMELINE" white="true" />
+                
                 <div className="timeline-bar"></div>
                 <div id = "timeline-content" className="timeline-content">
 

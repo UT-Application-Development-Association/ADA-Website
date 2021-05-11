@@ -1,0 +1,135 @@
+@import "../global_vars";
+
+// calc(minfsu + (maxfs-minfs) * (100vw - minssu) / (maxssu - minssu))
+.department-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    .heading-container {
+        margin-bottom: 2rem;
+    }
+    .dept {
+        position: relative;
+        display: flex;
+
+        height: 22rem;
+
+        .dept-name {
+            // font-weight: bold;
+            font-size: calc(2rem + 1.5vw);
+            letter-spacing: .6rem;
+            text-align: center;
+            margin: .8rem
+        }
+
+        .dept-content {
+            width: 100%;
+            max-width: 30rem;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dept-description {
+            // display: none;
+            width: 90%;
+            position: absolute;
+            opacity: 0;
+            transition-duration: .3s;
+            padding: 1rem;
+            z-index: 10;
+            font-size: calc(1rem - .02vw);
+            
+        }
+
+        .dept-img-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            transition-duration: .3s;
+            z-index: 20;
+
+            .dept-img {
+                width: 100%;
+                max-width: 20rem;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .content-row {
+            .dept-description {
+                width: 80%;
+            }
+        }
+    }
+
+    .dept:hover, .dept:active, .dept:focus {
+        .dept-description {
+            opacity: 1;
+            z-index: 20;
+        }
+
+        .dept-img-container {
+            opacity: 0.2;
+            z-index: 10;
+        }
+    }
+
+    
+
+    .dept-tech {
+        flex-direction: column;
+
+        .dept-img-container .dept-img {
+            height: auto;
+        }
+    }
+
+    .dept-event {
+        flex-direction: row-reverse;
+        .dept-name {
+            writing-mode: vertical-rl;
+        }
+
+        
+    }
+
+    .dept-pr {
+        flex-direction: row;
+        .dept-name {
+            writing-mode: vertical-rl;
+        }
+    }
+
+    .dept-mkt {
+        flex-direction: column-reverse;
+
+        .dept-img-container .dept-img {
+            height: 80%;
+        }
+    }
+
+    @media (max-width: 768px){
+
+        .dept {
+            height: 18rem;
+
+            .content-row {
+                width: 90%;
+                height: 100%;
+            }
+
+            .content-col .dept-description {
+                padding: .3rem;
+            }
+        }
+
+        
+
+        
+    }
+}

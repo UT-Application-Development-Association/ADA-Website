@@ -17,7 +17,8 @@
 
 .heading-container {
   .heading {
-    font-size: 3vw;
+    font-size: calc(2rem + 1.6vw);
+    text-shadow: 2px 2px 2px #33333333;
     margin-bottom: 0.8rem;
     &.white {
       color: $white;
@@ -35,11 +36,11 @@
 
   @media (max-width: 700px) {
     .heading {
-      font-size: 6vw;
+      // font-size: 6vw;
     } 
   }
 }
 
 .paragraph {
-  font-size: 1vw;
+  font-size: calc(1rem + .05vw);;
 }
