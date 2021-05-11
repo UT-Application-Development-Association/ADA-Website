@@ -9,13 +9,11 @@
   @media (max-width: 768px) {
     width: 80%;
   }
-  &.timeline {
-    overflow: hidden;
-    height: 500px;
-  }
 }
 
 .heading-container {
+  margin-bottom: 2rem;
+
   .heading {
     font-size: calc(2rem + 1.6vw);
     text-shadow: 2px 2px 2px #33333333;
