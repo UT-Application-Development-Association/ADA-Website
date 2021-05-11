@@ -16,16 +16,16 @@ export default function Department(props) {
         <div className="departments-section container">
             <Heading text="部门介绍" />
             <div className="row">
-                <div className="col-10 col-md-5 my-1 mx-auto mr-md-1">
+                <div className="col-12 col-sm-8 col-md-5 my-2 mx-auto mr-md-2">
                     <DeptTech img={techImg} />
                 </div>
-                <div className="col-10 col-md-5 my-1 mx-auto ml-md-1">
+                <div className="col-12 col-sm-8 col-md-5 my-2 mx-auto ml-md-2">
                     <DeptEvent img={eventImg} />
                 </div>
-                <div className="col-10 col-md-5 my-1 mx-auto mr-md-1">
+                <div className="col-12 col-sm-8 col-md-5 my-2 mx-auto mr-md-2">
                     <DeptPr img={prImg} />
                 </div>
-                <div className="col-10 col-md-5 my-1 mx-auto ml-md-1">
+                <div className="col-12 col-sm-8 col-md-5 my-2 mx-auto ml-md-2">
                     <DeptMkt img={mktImg} />
                 </div>
 

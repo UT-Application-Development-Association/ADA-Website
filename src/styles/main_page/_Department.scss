@@ -1,67 +1,6 @@
 @import "../global_vars";
 
-// .departments-section {
-//     padding-bottom: 5rem;
-
-//     .departments-title {
-//         text-align: center;
-//         margin-bottom: 5rem;
-//     }
-
-//     .container {
-//         .col-sm {
-//             width: 50vw;
-//             height: auto;
-//             .department-image {
-//                 display: block;
-//                 width: 30rem;
-//                 height: 30rem;
-//             }
-
-//             .department-overlay {
-//                 position: absolute;
-//                 top: 0;
-//                 left: 0;
-//                 width: 100%;
-//                 height: 100%;
-//                 background: rgba(0, 0, 0, 0.6);
-//                 color: white;
-//                 display: flex;
-//                 flex-direction: column;
-//                 align-items: center;
-//                 justify-content: center;
-//                 opacity: 0;
-//                 transition: opacity 0.25s;
-//             }
-
-//             .department-overlay > * {
-//                 transform: translateY(20px);
-//                 transition: transform 0.25s;
-//             }
-
-//             .department-overlay:hover {
-//                 opacity: 1;
-//             }
-
-//             .department-overlay:hover > * {
-//                 transform: translateY(0);
-//             }
-
-//             .department-title {
-//                 font-size: 2rem;
-//                 font-weight: bold;
-//             }
-
-//             .department-description {
-//                 font-size: 1rem;
-//                 margin-top: 0.2rem;
-//             }
-
-//             margin-bottom: 2rem;
-//         }
-//     }
-// }
-
+// calc(minfsu + (maxfs-minfs) * (100vw - minssu) / (maxssu - minssu))
 .department-section {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -72,11 +11,11 @@
         position: relative;
         display: flex;
 
-        height: 24rem;
+        height: 22rem;
 
         .dept-name {
             // font-weight: bold;
-            font-size: calc(2rem + 2vw);
+            font-size: calc(2rem + 1.5vw);
             letter-spacing: .6rem;
             text-align: center;
             margin: .8rem
@@ -85,7 +24,7 @@
         .dept-content {
             width: 100%;
             max-width: 30rem;
-            height: 20rem;
+            height: 80%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -97,22 +36,33 @@
             position: absolute;
             opacity: 0;
             transition-duration: .3s;
-            padding: 2rem;
+            padding: 1rem;
             z-index: 10;
-            font-size: calc(1rem - .01vw);
+            font-size: calc(1rem - .02vw);
+            
         }
 
         .dept-img-container {
             width: 100%;
             height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             transition-duration: .3s;
             z-index: 20;
 
             .dept-img {
                 width: 100%;
+                max-width: 20rem;
                 height: 100%;
                 object-fit: contain;
+            }
+        }
+
+        .content-row {
+            .dept-description {
+                width: 80%;
             }
         }
     }
@@ -129,8 +79,14 @@
         }
     }
 
+    
+
     .dept-tech {
         flex-direction: column;
+
+        .dept-img-container .dept-img {
+            height: auto;
+        }
     }
 
     .dept-event {
@@ -139,9 +95,7 @@
             writing-mode: vertical-rl;
         }
 
-        .dept-description {
-            width: 85%;
-        }
+        
     }
 
     .dept-pr {
@@ -149,13 +103,33 @@
         .dept-name {
             writing-mode: vertical-rl;
         }
-
-        .dept-description {
-            width: 85%;
-        }
     }
 
     .dept-mkt {
         flex-direction: column-reverse;
+
+        .dept-img-container .dept-img {
+            height: 80%;
+        }
+    }
+
+    @media (max-width: 768px){
+
+        .dept {
+            height: 18rem;
+
+            .content-row {
+                width: 90%;
+                height: 100%;
+            }
+
+            .content-col .dept-description {
+                padding: .3rem;
+            }
+        }
+
+        
+
+        
     }
 }
