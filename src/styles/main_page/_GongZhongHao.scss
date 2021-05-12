@@ -1,32 +1,76 @@
+.gzh-section > .container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    
+    // ::-webkit-scrollbar {
+    //     display: none;
+    // }
+
+    ::-webkit-scrollbar {
+        height: 8px;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 20px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #a8a8a8;
+    }
+
+      
+}
+
 .gzh-container {
 	display: flex;
 	justify-content: flex-start;
-    overflow-x: scroll;
+    overflow-x: auto;
 	overflow-y: hidden;
-	margin-bottom: 20px;
+
 }
-.gzh-container > article {
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-	height: 290px;
-}
-.gzh-container > article img {
-    //max-width: 80%;
-    width: 370px; /* width of container */
-    height: 200px; /* height of container */
-    object-fit: cover;
-    border: 2px solid rgba(224, 220, 220, 0.795);
-}
-.gzh-main-text {
-    padding: 20px 20px 20px;
-    font-size: 13px;
-    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
-    letter-spacing: 2px;
-}
-.gzh-main-text > button {
-    background: gray;
-    border: 0;
-    color: white;
-    padding: 10px;
-    width: 100%;
-}
+.gzh-container {
+    padding: .5rem;
+    article {
+        // border: 1px solid #ccc;
+        border-radius: 5px;
+
+        margin-right: 1.2rem;
+        
+        box-shadow: 0px 2px 3px #33333333;
+        transition-duration: .4s;
+        // height: 290px;
+
+        img {
+            //max-width: 80%;
+            width: 360px; /* width of container */
+            height: 180px; /* height of container */
+            object-fit: cover;
+
+            border-radius: 5px 5px 0 0;
+        }
+    }
+
+    article:hover {
+        box-shadow: 5px 5px 5px #33333333;
+    }
+
+    .gzh-main-text {
+        padding: 20px 20px 20px;
+        font-size: .9rem;
+        font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+        letter-spacing: 1px;
+    }
+
+
+    .qr-container img {
+        width: 200px;
+        height: 200px;
+    }
+
+} 
