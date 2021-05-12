@@ -6,7 +6,7 @@ import { comments } from "../../assets/comments.js";
 
 export default function Danmaku(props) {
     return (
-        <div className="danmakus-container container">
+        <div className="danmakus-container">
             <div className="danmakus-row">
                 {   
                     comments.slice(0, Math.floor(comments.length / 2)).map((data, key) => {
