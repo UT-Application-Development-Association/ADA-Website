@@ -3,10 +3,23 @@ import React from "react";
 export default function Heading(props) {
     return (
         <div className="heading-container">
-            <div className="heading">
-                {props.text}
+        { props.white !== "true" && (
+            <div>
+                <div className="heading">
+                    {props.text}
+                </div>
+                <div className="heading-line"></div>
             </div>
-            <div className="heading-line"></div>
+        )}
+
+        { props.white === "true" && (
+            <div>
+                <div className="heading white">
+                    {props.text}
+                </div>
+                <div className="heading-line white"></div>
+            </div>
+        )}
         </div>
     );
 }

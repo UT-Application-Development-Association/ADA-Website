@@ -4,10 +4,11 @@ import IntroSection from "../components/main_page/IntroSection";
 import GongZhongHao from "../components/main_page/GongZhongHao/GongZhongHao.js";
 import Timeline from "../components/main_page/Timeline.js";
 import Footnote from "../components/main_page/Footnote";
+import Department from "../components/main_page/Department.js";
 
 export default function Main(props) {
   return (
-    <div>
+    <div className="main-page">
       {/* If in browser, display arrow button */}
       {!props.isMobile && (
         <div className="nav-arrows">
@@ -21,19 +22,20 @@ export default function Main(props) {
           />
         </div>
       )}
-      <section className="intro-section">
+      <section className="intro-section" id="intro">
         <IntroSection/>
       </section>
-      <section className="departments-section"></section>
-      <section className="gzh-section">
+      <section className="department-section" id="departments">
+        <Department></Department>
+      </section>
+      <section className="gzh-section" id="gzh">
         <GongZhongHao text="公众号" />
         <div></div>
       </section>
-      <section className="timeline-section">
+      <section className="timeline-section" id="timeline">
         <Timeline/>
       </section>
-      <section className="timeline-section"></section>
-      <footer className='footnote'>
+      <footer className='footnote' id="contacts">
         <Footnote />
       </footer>
     </div>
