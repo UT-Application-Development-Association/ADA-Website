@@ -1,10 +1,13 @@
 @import "../global_vars";
 
 .full-timeline-container{
-    padding-bottom: 1rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 20px;
 
     .events-container {
-        margin-top: 1rem;
+        // margin-top: 1rem;
+        padding-right: 5px;
         height: 60vh;
         overflow-y: auto;
         overflow-x: hidden;
@@ -17,13 +20,38 @@
 
 
     .timeline-event{
-        // display: flex;
-        // flex-direction: row;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        position: relative;
+        z-index: 20;
+        
+        margin-bottom: 1rem;
+        padding-top: .8rem;
+        padding-bottom: .8rem;
+
+        background-color: $white;
+        border-radius: 5px;
+
+        transition-duration: .4s;
+
+        .deco-bar {
+            position: absolute;
+            width: .5rem;
+            height: 1rem;
+            z-index: 10;
+            background-color: #33f0a7;
+            left: 6rem
+        }
+
+        .deco-bar-top {
+            top: -1rem;
+        }
+
+        .deco-bar-bottom {
+            bottom: -1rem;
+            border-radius: 0px 0px 5px 5px ;
+        }
 
         .img-container{
-            height: 12rem;
+            // height: 12rem;
             max-width: 20rem;
             object-fit: cover;
 
@@ -31,6 +59,7 @@
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
+                border-radius: 5px;
             }
 
             @media (max-width: 450px){
@@ -41,6 +70,7 @@
 
         .info-container {
             font-family: $font;
+            padding: 15px;
             .name, a {
                 color: $black;
                 // text-decoration: none;
@@ -59,6 +89,12 @@
                 margin-top: .8rem;
             }
         }
+
+        
+    }
+
+    .timeline-event:hover{
+        box-shadow: 3px 3px 3px #33333333;
     }
 
     /* custom scrollbar */
@@ -80,5 +116,16 @@
     
     ::-webkit-scrollbar-thumb:hover {
         background-color: #cacaca;
+    }
+
+
+    @media (max-width: 768px) {
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        .events-container {
+            padding: 0;
+        }
     }
 }

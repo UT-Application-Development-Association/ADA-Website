@@ -23,17 +23,17 @@ export default function Main(props) {
         </div>
       )}
       <section className="intro-section" id="intro">
-        <IntroSection/>
+        <IntroSection />
       </section>
       <section className="department-section" id="departments">
-        <Department></Department>
+        <Department />
       </section>
       <section className="gzh-section" id="gzh">
         <GongZhongHao text="公众号" />
         <div></div>
       </section>
       <section className="timeline-section" id="timeline">
-        <Timeline/>
+        <Timeline />
       </section>
       <footer className='footnote' id="contacts">
         <Footnote />

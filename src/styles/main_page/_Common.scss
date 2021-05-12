@@ -1,5 +1,9 @@
 @import "../global_vars";
 
+.section, section > div {
+  position: relative;
+}
+
 .container {
   position: relative;
   margin-left: auto;
@@ -30,12 +34,6 @@
     &.white {
       background-color: $white;
     }
-  }
-
-  @media (max-width: 700px) {
-    .heading {
-      // font-size: 6vw;
-    } 
   }
 }
 
