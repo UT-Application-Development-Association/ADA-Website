@@ -5,4 +5,9 @@
   font-family: $font;
   position: relative;
   height: 0;
+
+  ::selection {
+    background-color: $dark;
+    color: $white;
+  }
 }

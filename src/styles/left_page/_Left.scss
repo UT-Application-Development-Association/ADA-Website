@@ -1,3 +1,6 @@
+@import "./FullTimeline";
+@import "./Danmaku";
+
 .left-arrow-button {
     height: 40px;
     width: 40px;
@@ -6,4 +9,10 @@
     position: absolute;
     top: 30px;
     right: 30px;
+}
+
+
+.left-page {
+    background-color: $white;
+    padding-top: 6vh;
 }
