@@ -10,7 +10,7 @@ export default function GongZhongHaoArticle(props) {
 	return (
 		<article>
 			<a href={info.href}>
-				<img src={props.image} alt="Sample photo"></img>
+				<img src={props.image} alt={info.title}></img>
 			</a>
 			<div className="gzh-main-text">
 				<h5>{info.title}</h5>
