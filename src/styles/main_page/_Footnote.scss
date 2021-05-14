@@ -4,6 +4,10 @@
   color: $white;
   background-color: $bg_dark;
 
+  a{
+    color: $white;
+  }
+
   padding-bottom: 3em;
   padding-top: 3em;
 
@@ -14,5 +18,9 @@
     height: 32px;
     width: 32px;
     margin-right: .5rem;
+  }
+
+  svg path {
+    fill: $white;
   }
 }

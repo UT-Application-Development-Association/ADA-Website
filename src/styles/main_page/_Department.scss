@@ -4,7 +4,8 @@
 .department-section {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    background-color: $white;
+    background-color: $bg_black;
+    color: $white;
 
     .dept-row {
         display: flex;
@@ -30,7 +31,8 @@
         height: 22rem;
         width: 22rem;
 
-        background-color: #fff;
+        background-color: $bg_dark;
+        border: 2px solid #4cf8e1;
         border-radius: 5px;
         transition-duration: .4s;
 
@@ -97,6 +99,8 @@
 
     .dept:hover, .dept:active, .dept:focus {
         box-shadow: 3px 3px 3px #33333333;
+        border: 2px dashed #4cf8e1;
+
         .dept-description {
             opacity: 1;
             z-index: 20;

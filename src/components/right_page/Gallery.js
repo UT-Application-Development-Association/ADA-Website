@@ -19,7 +19,7 @@ export default function Gallery(props) {
             <div className="row">
             
                 <div className="col-10 col-md-6 mx-auto">
-                    <Heading text="我们是谁" />
+                    <Heading text="我们是谁" white="true" />
                     <div className="img-row">
                         <GalleryImg src={newyear202001} text="2020新年晚会 2020-01"/>
                     </div>
