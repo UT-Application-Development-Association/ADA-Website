@@ -2,7 +2,8 @@
 
 .full-timeline-container{
     padding: 2rem;
-    background-color: #fff;
+    background-color: $bg_black;
+    border: 2px solid #ff679a;
     border-radius: 20px;
 
     .events-container {
@@ -27,14 +28,15 @@
         padding-top: .8rem;
         padding-bottom: .8rem;
 
-        background-color: $white;
+        // background-color: $dark;
+        border: 2px solid #33f0a7;
         border-radius: 5px;
 
         transition-duration: .4s;
 
         .deco-bar {
             position: absolute;
-            width: .5rem;
+            width: 4px;
             height: 1rem;
             z-index: 10;
             background-color: #33f0a7;
@@ -71,20 +73,19 @@
         .info-container {
             font-family: $font;
             padding: 15px;
+            color: $white;
             .name, a {
-                color: $black;
+                color: $white;
                 // text-decoration: none;
                 font-weight: 600;
             }
 
             .date {
-                color: #333333; 
                 font-style: italic;
                 font-size: 1rem;
             }
 
             .description {
-                color: #333333;
                 font-size: 1rem;
                 margin-top: .8rem;
             }

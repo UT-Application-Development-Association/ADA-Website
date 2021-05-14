@@ -29,7 +29,7 @@
     .gallery-img-container {
         position: relative;
         box-shadow: 2px 2px 2px #00000050;
-
+        transition-duration: .3s;
 
         .img-caption {
             width: 100%;
@@ -44,8 +44,8 @@
             color: $white;
 
             opacity: 0;
-
             transition-duration: .3s;
+            
 
             letter-spacing: 1px;
         }
@@ -53,6 +53,8 @@
     }
 
     .gallery-img-container:hover {
+        border: 2px solid #d0ff61;
+        // border-radius: 5px;
         .img-caption {
             opacity: 1;
         }

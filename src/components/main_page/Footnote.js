@@ -12,7 +12,7 @@ export default function Footnote(props) {
                     </h3>
                 </div> */}
                 <Heading text="联系我们" white="true" />
-                <div className="row">
+                <div >
                     <ul className="list-unstyled contact-list">
                         <li>
                             <svg t="1605925844704" className="icon" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2095">
@@ -33,7 +33,7 @@ export default function Footnote(props) {
                                 <path d="M32 32zM512 51.2C257.51 51.2 51.2 257.51 51.2 512S257.51 972.8 512 972.8 972.8 766.49 972.8 512 766.49 51.2 512 51.2zM399.2 702.98h-93.3V402.74h93.3v300.24zM351.98 365.9c-29.46 0-48.54-20.94-48.54-46.71 0-26.4 19.62-46.65 49.74-46.65s48.54 20.25 49.11 46.65c0.06 25.83-19.02 46.71-50.31 46.71z m387.96 337.08h-93.27V536.57c0-38.7-13.53-65.04-47.28-65.04-25.77 0-41.1 17.82-47.91 34.98-2.46 6.09-3.06 14.73-3.06 23.28v173.13h-93.36V498.44c0-37.44-1.2-68.79-2.46-95.76h81.03l4.32 41.7h1.83c12.3-19.62 42.39-48.48 92.73-48.48 61.38 0 107.43 41.1 107.43 129.51v177.54z" p-id="8312" fill="#000000" >
                                 </path>
                             </svg>
-                            <span>University of Toronto Application Development Association (UTADA)</span>    
+                            <a href="https://www.linkedin.com/company/university-of-toronto-application-development-association/">University of Toronto Application Development Association (UTADA)</a>    
                         </li>
                     </ul>
                 </div>

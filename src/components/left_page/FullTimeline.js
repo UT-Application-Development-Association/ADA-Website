@@ -12,7 +12,7 @@ import imgUTHack2021 from "../../assets/img/events/UTHack2021.png";
 export default function FullTimeline(props) {
     return (
         <div className="full-timeline-container container">
-            <Heading text="$ git log" />
+            <Heading text="$ git log" white="true" />
 
             {/* Events should be in reverse order, i.e. the most recent event should be the first */}
             <div className="events-container">

@@ -14,7 +14,7 @@ import eventImg from "../../assets/img/depts/EVENT.png";
 export default function Department(props) {
     return (
         <div className="departments-section container">
-            <Heading text="部门介绍" />
+            <Heading text="部门介绍" white="true" />
             <div className="dept-row">
                 <div className="my-auto ml-md-auto">
                     <DeptTech img={techImg} />
