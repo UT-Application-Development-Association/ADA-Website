@@ -17,7 +17,7 @@
 
     position: relative;
     overflow: hidden;
-    background-color: $bg_aqua;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);;
 
     ::-webkit-scrollbar {
         display: none;
