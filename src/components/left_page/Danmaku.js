@@ -1,7 +1,7 @@
 import React from "react";
 
 import DanmakuItem from "./DanmakuItem";
-import { comments } from "../../assets/comments.js";
+import comments from "../../assets/comments.json";
 
 
 export default function Danmaku(props) {
