@@ -1,6 +1,7 @@
 import React from "react";
 import TimelineEvent from "./TimelineEvent";
 import Heading from "./Heading";
+import { ChevronLeft, ChevronRight } from "react-bootstrap-icons";
 
 import imgClubCarnival2019 from "../../assets/img/events/ClubCarnival2019.jpeg";
 import imgWelcoming2019 from "../../assets/img/events/Welcoming2019.jpeg";
@@ -13,8 +14,8 @@ export default function Timeline(props) {
     return (
         <div className="timeline-container">
             <div className="button-container container">
-                <span className="left-button" onClick={() => timelineMoveLeft()}></span>
-                <span className="right-button" onClick={() => timelineMoveRight()}></span>
+                <ChevronLeft className="left-button" color="white" onClick={() => timelineMoveLeft()}></ChevronLeft>
+                <ChevronRight className="right-button" color="white" onClick={() => timelineMoveRight()}></ChevronRight>
             </div>
             <div className="container timeline">
                 <Heading text="TIMELINE" white="true" />

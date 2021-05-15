@@ -59,8 +59,7 @@ export default function FullTimeline(props) {
                     date="09/2019"
                 />
             </div>
-            
-            
+        
         </div>
     );
 }

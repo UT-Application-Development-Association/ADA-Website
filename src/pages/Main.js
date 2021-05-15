@@ -13,12 +13,14 @@ export default function Main(props) {
       {!props.isMobile && (
         <div className="nav-arrows">
           <ArrowLeftSquare
-            className="main-arrow-button main-arrow-left"
+            className="main-arrow-button main-arrow-left nav"
             onClick={() => props.setCurrPage("Left")}
+            color="white"
           />
           <ArrowRightSquare
-            className="main-arrow-button main-arrow-right"
+            className="main-arrow-button main-arrow-right nav"
             onClick={() => props.setCurrPage("Right")}
+            color="white"
           />
         </div>
       )}

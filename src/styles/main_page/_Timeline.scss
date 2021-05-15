@@ -118,49 +118,23 @@
         cursor: pointer;
     }
 
+    .left-button, .right-button {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        position: absolute;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
     .left-button{
-        position: relative;
-        left: -40px;
-        cursor: pointer;
-        @media (max-width: 768px) {
-            display: none;
-          }
-    }
-
-    .left-button:after, .left-button:before {
-        border: 20px solid transparent;
-        border-right: 20px solid $bg_aqua;
-        position: absolute;
-        top: 0;
-        right: -3px;
-        content: ' ';
+        left: -80px;
     }
     
-    .left-button:before {
-        border-right-color: $white;
-        right: 0px;
-    }
-
     .right-button{
-        position: absolute;
         right: -80px;
-        cursor: pointer;
-        @media (max-width: 768px) {
-            display: none;
-          }
     }
 
-    .right-button:after, .right-button:before {
-        border: 20px solid transparent;
-        border-left: 20px solid $bg_aqua;
-        position: absolute;
-        top: 0;
-        right: 3px;
-        content: ' ';
-    }
-    
-    .right-button:before {
-        border-left-color: $white;
-        right: 0px;
-    }
 }
