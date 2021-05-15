@@ -2,9 +2,11 @@
 
 .full-timeline-container{
     padding: 2rem;
+    
     background-color: $bg_black;
     border: 2px solid #ff679a;
     border-radius: 20px;
+    z-index: 5;
 
     .events-container {
         // margin-top: 1rem;
@@ -108,7 +110,7 @@
     }
     
     ::-webkit-scrollbar-thumb {
-        background-color: $bg_gray;
+        background-color: #fff;
         border-radius: 20px;
         border: 6px solid transparent;
         background-clip: content-box;
@@ -116,7 +118,7 @@
     }
     
     ::-webkit-scrollbar-thumb:hover {
-        background-color: #cacaca;
+        background-color: #dddddd;
     }
 
 

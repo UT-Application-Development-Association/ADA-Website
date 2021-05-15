@@ -10,4 +10,8 @@
     background-color: $dark;
     color: $white;
   }
+
+  .nav {
+    z-index: 1000;
+  }
 }

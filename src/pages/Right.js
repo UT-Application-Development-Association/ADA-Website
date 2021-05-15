@@ -7,8 +7,9 @@ export default function Right(props) {
     <div className="right-page">
       {!props.isMobile && (
         <ArrowLeftSquare
-          className="right-arrow-button"
+          className="right-arrow-button nav"
           onClick={() => props.setCurrPage("Main")}
+          color="white"
         />
       )}
 
