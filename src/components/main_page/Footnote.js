@@ -37,6 +37,12 @@ export default function Footnote(props) {
                         </li>
                     </ul>
                 </div>
+                <div className="copy-right">
+                    Developed by: University of Toronto Application Development Association
+                    <span className="developers"><br />
+                        Thanks to ...... for developing this website in 2020-2021.
+                    </span>
+                </div>
             </div>
         </div>
     );
