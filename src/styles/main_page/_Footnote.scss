@@ -1,6 +1,7 @@
 @import "../global_vars";
 
 .main-footer{
+  
   color: $white;
   background-color: $bg_dark;
   position: relative;
@@ -9,8 +10,8 @@
     color: $white;
   }
 
-  padding-bottom: 3em;
   padding-top: 3em;
+  padding-bottom: 6rem;
 
   .contact-list li {
     margin-bottom: .8rem;
@@ -26,18 +27,24 @@
   }
 
   .copy-right {
+    width: 100%;
     position: absolute;
-    bottom: -4rem;
+    bottom: 0rem;
     left: 50%;
     transform: translate(-50%, -50%);
-    line-height: .8rem;
+    // line-height: .8rem;
     font-size: .8rem;
+    text-align: center;
+    
 
     .developers {
       display: none;
     }
 
     &:hover {
+      .developed-by {
+        display: none;
+      }
       .developers {
         display: block;
       }

@@ -11,7 +11,7 @@ import img2 from "../../../assets/img/gongzhonghao/2.jpg";
 export default function GongZhongHao(props) {
     return (
         <div className="container">
-            <Heading text="公众号" />
+            <Heading text="公众号" white="true" />
             <div className="gzh-container">
                 <GongZhongHaoArticle id={0} image={img0}/>
                 <GongZhongHaoArticle id={1} image={img1} />
