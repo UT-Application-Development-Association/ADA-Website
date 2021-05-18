@@ -7,8 +7,8 @@
   height: 0;
 
   ::selection {
-    background-color: $dark;
-    color: $white;
+    background-color: #8effe3;
+    color: #111;
   }
 
   .nav {
@@ -18,4 +18,20 @@
   .heading {
     user-select: none;
   }
+
+    .main-page {
+      background: #43506c;
+    }
+
+    .intro-section {
+      background: #43506c;
+    }
+
+    .department-section {
+      background: #232425;
+    }
+
+    .gzh-section {
+      background: #ffffff;
+    }
 }

@@ -20,15 +20,20 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        // height: 20rem;
+        width: 100%;
+        
 
         img {
-            max-width: 100%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 
     .gallery-img-container {
         position: relative;
-        box-shadow: 2px 2px 2px #00000050;
+        box-shadow: -5px -5px 1px #7dff55;
         transition-duration: .3s;
 
         .img-caption {
@@ -53,7 +58,7 @@
     }
 
     .gallery-img-container:hover {
-        border: 2px solid #d0ff61;
+        border: 5px solid #75409A;
         // border-radius: 5px;
         .img-caption {
             opacity: 1;

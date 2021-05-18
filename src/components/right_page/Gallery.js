@@ -15,11 +15,11 @@ import yingxin2019 from "../../assets/img/events/Welcoming2019.jpeg";
 export default function Gallery(props) {
     return (
         <div className="gallery-container container">
-        
+        <Heading text="我们是谁" white="true" />
             <div className="row">
             
                 <div className="col-10 col-md-6 mx-auto">
-                    <Heading text="我们是谁" white="true" />
+                    
                     <div className="img-row">
                         <GalleryImg src={newyear202001} text="2020新年晚会 2020-01"/>
                     </div>

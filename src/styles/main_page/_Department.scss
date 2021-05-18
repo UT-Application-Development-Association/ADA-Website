@@ -4,10 +4,21 @@
 .department-section {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    background-color: $bg_black;
-    background: linear-gradient(to right, #0e0f0f, #101111);
+    background-color: #111111;
+    // background: linear-gradient(to right, #0e0f0f, #101111);
     // background: linear-gradient(to right, #1b1b1b, #212324, #272c2e);
     color: $white;
+
+    // .dept-cards-container {
+    //     $stripe_color: #000000;
+    //     background: repeating-linear-gradient(
+    //         45deg,
+    //         transparent,
+    //         transparent 30px,
+    //         $stripe_color 30px,
+    //         $stripe_color 60px
+    //     );
+    // }
 
     .dept-row {
         display: flex;
@@ -15,6 +26,7 @@
         align-items: center;
         justify-content: space-around;
 
+        
         @media (max-width: 767px){
             flex-direction: column;
             justify-content: center;
@@ -34,7 +46,7 @@
         width: 22rem;
 
         background-color: $bg_dark;
-        border: 2px solid #4cf8e1;
+        border: 3px solid #4cf8e1;
         border-radius: 5px;
         transition-duration: .4s;
 

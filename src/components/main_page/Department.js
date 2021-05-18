@@ -15,22 +15,25 @@ export default function Department(props) {
     return (
         <div className="departments-section container">
             <Heading text="部门介绍" white="true" />
-            <div className="dept-row">
-                <div className="my-auto ml-md-auto">
-                    <DeptTech img={techImg} />
+            <div className="dept-cards-container">
+                <div className="dept-row">
+                    <div className="my-auto ml-md-auto">
+                        <DeptTech img={techImg} />
+                    </div>
+                    <div className="my-auto mr-md-auto">
+                        <DeptEvent img={eventImg} />
+                    </div>
                 </div>
-                <div className="my-auto mr-md-auto">
-                    <DeptEvent img={eventImg} />
+                <div className="dept-row">
+                    <div className="my-auto ml-md-auto">
+                        <DeptPr img={prImg} />
+                    </div>
+                    <div className="my-auto mr-md-auto">
+                        <DeptMkt img={mktImg} />
+                    </div>
                 </div>
             </div>
-            <div className="dept-row">
-                <div className="my-auto ml-md-auto">
-                    <DeptPr img={prImg} />
-                </div>
-                <div className="my-auto mr-md-auto">
-                    <DeptMkt img={mktImg} />
-                </div>
-            </div>
+            
         </div>
     );
 }
