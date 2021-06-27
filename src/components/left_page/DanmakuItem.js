@@ -2,9 +2,17 @@ import React from "react";
 
 
 export default function DanmakuItem(props) {
-    return (
+    if (props.url) return (
+        <a href={props.url}>
+            <div className="danmaku-item">
+                <span className="name" href="{props.url}">{props.name}: </span>
+                <span className="comment">{props.comment}</span> 
+            </div>
+        </a>
+    );
+    else return (
         <div className="danmaku-item">
-            <span className="name">{props.name}: </span>
+            <span className="name" href="{props.url}">{props.name}: </span>
             <span className="comment">{props.comment}</span> 
         </div>
     );

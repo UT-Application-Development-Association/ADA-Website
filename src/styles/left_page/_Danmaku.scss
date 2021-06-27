@@ -1,4 +1,4 @@
-$length: 10;
+$length: 26;
 $time: 10s * $length;
 
 .danmakus-container {
@@ -13,6 +13,7 @@ $time: 10s * $length;
     padding-bottom: 3rem;
 
     .danmakus-row {
+        z-index: 100;
         position:absolute;
         display: flex;
         flex-direction: row;
@@ -24,6 +25,7 @@ $time: 10s * $length;
         animation: danmaku linear $time infinite normal;
 
         .danmaku-item {
+            z-index: 200;
             margin-left: .5rem;
             margin-right: .5rem;
             padding: .8rem 1.2rem;
@@ -37,7 +39,7 @@ $time: 10s * $length;
             white-space: nowrap;
 
             a {
-                color: $black;
+                color: $white;
                 text-decoration: none;
             }
 
@@ -65,7 +67,7 @@ $time: 10s * $length;
         // transform: translate3d(0,0,0);
     }
     to {
-        left: -500px * $length;
+        left: -600px * $length;
         // transform:translate3d(-100%,0,0);
     }
 }
