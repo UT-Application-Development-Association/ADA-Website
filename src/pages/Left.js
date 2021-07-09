@@ -43,11 +43,11 @@ export default function Left(props) {
               random: true,
               anim: {
                 enable: true,
-                speed: 3
+                speed: 1
               }
             },
             line_linked: {
-              enable: false
+              enable: true
             }
           }
         }}
